@@ -447,11 +447,6 @@ class GameViewController: UIViewController {
         guard let indexQuestion = self.indexQuestion else { return }
         
         let responce = getResponceInButtonTitle(responce: responce)
-//        var responce = responce
-//        for _ in 0..<6 {
-//            responce.removeFirst()
-//        }
-//        print(responce)
         
         if responce.lowercased() == questionArray[indexQuestion].correctResponse.lowercased() {
             print("Верно")
@@ -535,7 +530,6 @@ class GameViewController: UIViewController {
             animationForElements()
         }
     }
-    
     
     //Подсказки
     
