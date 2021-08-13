@@ -17,6 +17,8 @@ class CluesViewController: UIViewController {
     
     @IBOutlet weak var labelClue: UILabel!
     
+    @IBOutlet weak var okButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,10 @@ class CluesViewController: UIViewController {
         if let text = self.text {
             labelClue.text = text
         }
+        
+        okButton.layer.cornerRadius = 10
+        okButton.layer.borderWidth = 3
+        okButton.layer.borderColor = UIColor.systemPurple.cgColor
         
     }
     

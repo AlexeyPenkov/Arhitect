@@ -22,10 +22,12 @@ class Game {
         records = recordCaretaker.loadRecords() ?? []
     }
     
+    var currentDifficuly: Difficulty?
+    
     var gameSession: GameSession?
     
     var percent: Double? {
-        guard let correctCount = gameSession?.correctResponseCount,
+        guard let correctCount = gameSession?.correctResponseCount.value,
               let questCount = gameSession?.questCount else {
             return 0.0
         }

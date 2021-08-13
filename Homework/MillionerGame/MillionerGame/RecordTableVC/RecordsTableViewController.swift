@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultTableViewController: UITableViewController {
+class RecordsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
